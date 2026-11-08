@@ -1,0 +1,5 @@
+prints/
+__pycache__/
+
+# arquivos de trabalho de imagem (não publicar)
+img/_*
