@@ -135,5 +135,7 @@
   }
 
   // Para testar: abra o app com #avaliar no fim do link.
-  if (location.hash === "#avaliar") setTimeout(abrir, 300);
+  function teste() { if (location.hash === "#avaliar" && !aberto) setTimeout(abrir, 300); }
+  teste();
+  addEventListener("hashchange", teste);
 })();
