@@ -59,7 +59,8 @@ const html = `<!DOCTYPE html>
 <script>const IMG = ${JSON.stringify(IMG)};
 ${src("banco.js")}
 ${src("figuras.js")}
-${src("app.js")}</script>
+${src("app.js")}
+${src("feedback.js").replace(/__APP__/g, "corpo").replace("https://apps-enfermagem.forjadoleao.workers.dev", process.env.FBK_URL || "https://apps-enfermagem.forjadoleao.workers.dev")}</script>
 </body>
 </html>
 `;
