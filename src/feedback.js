@@ -134,8 +134,8 @@
     });
   }
 
-  // Para testar: abra o app com #avaliar no fim do link.
-  function teste() { if (location.hash === "#avaliar" && !aberto) setTimeout(abrir, 300); }
+  // Para testar: abra o app com #avaliar no fim do link (só abre se ainda não avaliou neste aparelho).
+  function teste() { if (location.hash === "#avaliar" && !aberto && !S.resp) setTimeout(abrir, 300); }
   teste();
   addEventListener("hashchange", teste);
 })();
